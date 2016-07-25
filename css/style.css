@@ -43,6 +43,7 @@ header form {
 	font-family: "Lucida Sans Unicode", Arial, sans-serif;
 	
 }
+
 header form img{
 	width: auto;
 	height: auto;
@@ -56,8 +57,23 @@ header form input {
 	border-radius: 1px;
 	border: 0;
 	padding-left: 4px;
-	margin-right: 4px;
+	margin-right: 2px;
 }
+header input[type="submit"] {
+	width: 40px;
+	height: 13px;
+	border: none;
+	background: rgba(255,255,255,0);
+	font-family: "Lucida Sans Unicode", Arial, sans-serif;
+	font-size: 11px;
+	color: #fff;	
+	font-style: normal;
+	margin-right:0;
+	border-right: 1px solid white;
+	padding: 0;
+ 
+} 
+
 header form ul {
 	display: inline-block;
 }
@@ -66,16 +82,12 @@ header form li {
 	 
 }
 header form li:first-child {
-	border-right: 1px solid white;
-	padding-right: 5px;
-	padding-left: 3px;
-}
-header form li:nth-child(2) {
 	padding-right: 12px;
+	 
 }
+
 header form li:last-child {
 	font-size: 12px;
-	border-bottom: 1px solid #bfbfbf;
 }
 header form a {
 	display: inline-block;
@@ -85,6 +97,7 @@ header form a {
 header form span {
 	display: inline-block;
 	color: #bfbfbf;
+	border-bottom: 1px solid #bfbfbf;
 }
 header .navi{
 	width: 75px;
@@ -220,27 +233,37 @@ div {
 
 /*LEFT ASIDE*/
 
-aside {
+aside  {
 	float: left;
 	margin-left: 45px;
-	margin-top: 7px;
+	margin-top: 5px;
 	margin-right: 5px;
 	width: 186px; 
 }
 aside ul {
 	position: relative;
-}
+	margin-top: 2px;
+	}
+
 aside li {
 	text-decoration: none;
 	color: #465961;
-	margin-left: 45px;
+	margin-left: 54px;
 	margin-top: 4px;
 	font-family: "Lucida Sans Unicode", Arial, sans-serif;
 	font-size: 13px;
 	list-style-type: circle;
 	line-height: 21px;
 	text-transform: capitalize;
+	text-indent: -8px;
+	
 }
+ aside a {text-decoration: none;
+ color: #465961;
+	  
+  }
+
+
 aside li:first-child {
 	margin: 0;
 	width: 178px;
@@ -254,6 +277,7 @@ aside li:first-child {
 	padding-left: 2px;
 	box-shadow: 2px 2px 5px 0px rgba(150,150,150,0.75);
 	list-style-type: none;
+	text-indent: 0;
 }
 aside li:first-child:hover {
 	font-size: 13px;
@@ -278,6 +302,7 @@ aside li:nth-child(2){
 	margin-top: 12px;
 	padding-left: 5px;
 	list-style-type: none;
+	text-indent: 0;
 }
 aside li:nth-child(7){
 	margin: 0;
@@ -292,6 +317,7 @@ aside li:nth-child(7){
     box-shadow: 2px 2px 5px 0px rgba(150,150,150,0.75);
     padding-left: 4px;
     list-style-type: none;
+	text-indent: 0;
 }
 aside li:nth-child(12){
 	margin: 0;
@@ -305,6 +331,7 @@ aside li:nth-child(12){
 	box-shadow: 2px 2px 5px 0px rgba(150,150,150,0.75);
 	padding-left: 5px;
 	list-style-type: none;
+	text-indent: 0;
 }
 aside li:hover {
 	font-style: italic;
@@ -402,11 +429,18 @@ figcaption span {
 	}
 
 /*RIGHT ASIDE*/
+ aside .right_aside{
+	float: left;
+	margin-left: 45px;
+	margin-top: 5px;
+	margin-right: 5px;
+	width: 186px; 
+}
 
 .right_aside {
 	float: left;
 	display: inline-block;
-	margin-left: 10px;
+	margin-left: 11px;
 }
 .right_aside h6 {
 	width: 178px;
@@ -440,11 +474,12 @@ figcaption span {
 	margin-top: 14px;
 	color: #465961;
 	position: relative;
-	margin-left: 15px;
+	margin-left: -10px;
 	margin-bottom: 6px;
 }
 .right_aside .checkbox_second {
 	margin-top: 6px;
+	margin-left: -10px;
 }
 .right_aside .circle {
 	background: linear-gradient(to bottom,#0c3357, #1e6584);
@@ -452,7 +487,7 @@ figcaption span {
 }
 .right_aside span {
 	position: absolute;
-	top: 6px;
+	top: 3px;
 	left: 31px;
 }
 .right_aside form  {
@@ -469,14 +504,14 @@ figcaption span {
 	width: 10px;
 	border: 1px solid #465961;
 }
-form input[type=submit] {
+.right_aside form input[type=submit] {
 	width: 80px;
 	height: 25px;
 	margin-left: 2px;
-    margin-top: 14px;
+    margin-top: 15px;
 	border-radius: 15px;
-	background: linear-gradient(to top,#0c3357, #1e6584);
-	box-shadow: 2px 2px 5px 0px rgba(150,150,150,0.75);
+	background: linear-gradient(180deg, #206988 0%, #114165 59%, #0c3256 100%);
+	box-shadow: 2px 2px 4px 0px rgba(150,150,150,0.75);
 	border: 0;
 	color: white;
 	text-transform: uppercase;
